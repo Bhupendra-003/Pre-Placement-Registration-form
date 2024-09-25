@@ -7,48 +7,47 @@
 html, body{
     height: auto;
     width: 100%;
-    background-color: aliceblue;
+    background: linear-gradient(to top, #d8e4ff, #f4f4f4);
     display: flex;
     justify-content: center;
-    align-items: center;
 }
+
 .main{
+    padding: 30px 25px;
+    background-color: #3b37fe;
     display: flex;
     position: relative;
-    background-color: white;
     width: 70%;
     justify-content: center;
-    align-items: center;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
     margin: 40px 0px 40px 0px;
+    border-radius: 18px;
 }
 .main-left{
-    position: relative;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    width: 35%;
-    height: 100%;
-    background-color: rgb(16, 104, 255);
+    width: auto;
     color: white;
-    padding: 25px;
-    letter-spacing: 0.1rem;
-    height: 2350px;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 20px;
+    width: 35%;
 }   
+.main-right{
+    border-radius: 18px;
+    background-color: white;
+    width: 65%;
+    padding: 40px 0px;
+    display: flex;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+}
 .main-left h1{
     margin: 30% 0 20px 0;
 }
 .main-left p{
     font-size: 0.8rem;
 }
-.main-right{
-    width: 65%;
-    padding: 40px 20px;
-    display: flex;
-    height: fit-content;
-    justify-content: center;
-    align-items: center;
-}
+
 .main-right h3{
     margin-top: 45px;
 }
@@ -59,8 +58,8 @@ html, body{
 }
 .name-area{
     display: flex;
-    justify-content: space-between;
     margin-top: 30px;
+    gap: 15px;
 }
 label{
     font-size: 0.8rem;

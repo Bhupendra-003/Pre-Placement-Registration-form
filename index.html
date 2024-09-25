@@ -1,31 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="main">
         <div class="main-left">
             <h1>Pre-Placement Registration</h1>
             <p>Hands on placement development skills with ZORO.</p>
-            <div class="title-container">
-                Personal Details
-            </div>
         </div>
         <div class="main-right">
             <div class="content">
-                <h2>Lets Get Started</h2>
-                <div class="name-area">
-                    <div>
-                        <label for="">First name</label>
-                        <input type="text" placeholder="Alex">
-                    </div>
-                    <div>
-                        <label for="">Last name</label>
-                        <input type="text" placeholder="Parkinson">
+                <div class="section">
+                    <h2>Personal Details</h2>
+                    <div class="name-area">
+                        <div>
+                            <label for="">First name</label>
+                            <input type="text" placeholder="Alex">
+                        </div>
+                        <div>
+                            <label for="">Last name</label>
+                            <input type="text" placeholder="Parkinson">
+                        </div>
                     </div>
                 </div>
                 <div class="email">
@@ -48,7 +49,8 @@
                     <label for="dob">Date of Birth: </label>
                     <input type="date" name="dob">
                 </div>
-                <div class="education-details">
+                <div class="education-details section">
+                    <h2>Educational Details</h2>
                     <div>
                         <label for="university">University/College Name:</label>
                         <input type="text" id="university" placeholder="Enter University/College Name">
@@ -59,7 +61,7 @@
                     </div>
                     <div>
                         <label for="graduation-year">Year of Graduation:</label>
-                        <input type="number" id="graduation-year" placeholder="YYYY" min="1900" max="2100">
+                        <input type="number" id="graduation-year" placeholder="YYYY" min="1900" max="2050">
                     </div>
                     <div>
                         <label for="cgpa">CGPA/Percentage:</label>
@@ -69,9 +71,53 @@
                         <label for="specialization">Specialization (if applicable):</label>
                         <input type="text" id="specialization" placeholder="Enter Specialization">
                     </div>
-                </div>                
+                </div>
+                <!-- Skills and Experience -->
+                <div class="section">
+                    <h2>Skills and Experience</h2>
+                    <label for="skills">Skills (Technical and Soft Skills):</label>
+                    <input type="text" id="skills" name="skills" required>
+
+                    <h3>Internships/Work Experience:</h3>
+                    <label for="company-name">Company Name:</label>
+                    <input type="text" id="company-name" name="company-name">
+
+                    <label for="job-title">Job Title:</label>
+                    <input type="text" id="job-title" name="job-title">
+
+                    <label for="duration">Duration:</label>
+                    <input type="text" id="duration" name="duration">
+
+                    <label for="responsibilities">Responsibilities:</label>
+                    <textarea id="responsibilities" name="responsibilities" rows="4"></textarea>
+
+                    <h3>Projects:</h3>
+                    <label for="project-title">Project Title:</label>
+                    <input type="text" id="project-title" name="project-title">
+
+                    <label for="project-description">Project Description:</label>
+                    <textarea id="project-description" name="project-description" rows="4"></textarea>
+
+                    <label for="technologies-used">Technologies Used:</label>
+                    <input type="text" id="technologies-used" name="technologies-used">
+                </div>
+
+                <!-- Additional Information -->
+                <div class="section">
+                    <h2>Additional Information</h2>
+                    <label for="resume">Resume Upload:</label>
+                    <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx">
+
+                    <label for="linkedin">LinkedIn Profile (optional):</label>
+                    <input type="url" id="linkedin" name="linkedin">
+
+                    <label for="cover-letter">Cover Letter (optional):</label>
+                    <input type="file" id="cover-letter" name="cover-letter" accept=".pdf,.doc,.docx">
+                </div>
+                <button class="submit" type="submit">Submit</button>
             </div>
         </div>
     </div>
 </body>
+
 </html>

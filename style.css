@@ -5,23 +5,24 @@
     box-sizing: border-box;
 }
 html, body{
-    height: 100%;
+    height: auto;
     width: 100%;
     background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .main{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
     background-color: white;
     width: 70%;
-    height: 90%;
+    height: 900px;
     justify-content: center;
     align-items: center;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     border-radius: 20px;
     display: flex;
+    margin: 40px 0px 40px 0px;
 }
 .main-left{
     position: relative;
@@ -49,13 +50,15 @@ html, body{
     align-items: center;
 }
 .content{
+    margin: 70px 0 0 0;
     width: 77%;
-    height: 90%;
+    height: 100%;
     border: 2px solid white;
 }
 .name-area{
     display: flex;
     justify-content: space-between;
+    margin-top: 30px;
 }
 label{
     font-size: 0.8rem;

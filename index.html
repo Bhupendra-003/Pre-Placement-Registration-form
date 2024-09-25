@@ -11,6 +11,9 @@
         <div class="main-left">
             <h1>Pre-Placement Registration</h1>
             <p>Hands on placement development skills with ZORO.</p>
+            <div class="title-container">
+                Personal Details
+            </div>
         </div>
         <div class="main-right">
             <div class="content">
@@ -29,10 +32,44 @@
                     <label for="email">Email: </label>
                     <input type="email" placeholder="xyz@gmail.com">
                 </div>
-                <div class="mobile-no">
-                    <label for="email">Phone: </label>
-                    <input type="email" placeholder="62XXXXXXXX">
+                <div class="gender">
+                    <label for="gender">Gender: </label>
+                    <input type="radio" name="gender" class="gender-input-male">Male
+                    <input type="radio" name="gender" class="gender-input-female">Female
                 </div>
+                <div>
+                    <label for="mobile-no">Mobile No: </label>
+                    <div class="mobile-no-input">
+                        <input id="ccode" type="tel" placeholder="+91">
+                        <input id="mobile" type="tel" name="mobile-no" pattern="[0-9]{10}" placeholder="62XXXXXXXX">
+                    </div>
+                </div>
+                <div>
+                    <label for="dob">Date of Birth: </label>
+                    <input type="date" name="dob">
+                </div>
+                <div class="education-details">
+                    <div>
+                        <label for="university">University/College Name:</label>
+                        <input type="text" id="university" placeholder="Enter University/College Name">
+                    </div>
+                    <div>
+                        <label for="degree">Degree/Program:</label>
+                        <input type="text" id="degree" placeholder="Enter Degree/Program">
+                    </div>
+                    <div>
+                        <label for="graduation-year">Year of Graduation:</label>
+                        <input type="number" id="graduation-year" placeholder="YYYY" min="1900" max="2100">
+                    </div>
+                    <div>
+                        <label for="cgpa">CGPA/Percentage:</label>
+                        <input type="text" id="cgpa" placeholder="Enter CGPA/Percentage">
+                    </div>
+                    <div>
+                        <label for="specialization">Specialization (if applicable):</label>
+                        <input type="text" id="specialization" placeholder="Enter Specialization">
+                    </div>
+                </div>                
             </div>
         </div>
     </div>

@@ -13,15 +13,14 @@ html, body{
     align-items: center;
 }
 .main{
+    display: flex;
     position: relative;
     background-color: white;
     width: 70%;
-    height: 900px;
     justify-content: center;
     align-items: center;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     border-radius: 20px;
-    display: flex;
     margin: 40px 0px 40px 0px;
 }
 .main-left{
@@ -43,7 +42,6 @@ html, body{
 }
 .main-right{
     width: 65%;
-    height: 100%;
     padding: 40px 20px;
     display: flex;
     justify-content: center;
@@ -73,4 +71,38 @@ input{
     border-radius: 7px;
     margin-top: 5px;
     font-size: 15px;
+}
+.mobile-no-input{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    align-items: center;
+}
+
+#ccode{
+    width: 15%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    margin-top: 5px;
+    font-size: 15px;
+}
+.gender input{
+    margin-top: 15px;
+}
+.gender-input-male{
+    width: fit-content;
+    margin-right: 10px;
+}
+.gender-input-female{
+    width: fit-content;
+    margin-right: 10px;
+    margin-left: 80px;
+}
+.education-details {
+    margin-top: 70px;
+}
+
+.education-details div {
+    margin-bottom: 20px;
 }
